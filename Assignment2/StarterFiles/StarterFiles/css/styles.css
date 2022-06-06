@@ -1,4 +1,15 @@
 html, body{
     margin: 0;
     padding: 0;
+
+}.L{display: none;}
+.P{display: block; width:100%;height: auto;}
+@media screen and (min-width:1023px){
+.P{display:none}
+.L{display:block; width:100%;height: auto;}
+}
+@media screen and (min-width:600px)and(max-width:1024px) {
+    .P{display: none;}
+    .L{display:block}
+    
 }
