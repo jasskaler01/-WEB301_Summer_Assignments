@@ -2,17 +2,40 @@ html, body{
     margin: 0;
     padding: 0;
 }
-
-.img{width:100%;height:auto}
-.L{display: none;}
-.P{display: block; width:100%;height: auto;}
-@media screen and (min-width:1023px){
-.P{display:none}
-.L{display:block; width:100%;height: auto;}
+nav{
+    background-color:rgb(102, 188, 211);
+    padding: 5px;
+    color:white
 }
-.img{width:100%;height:auto}
-@media screen and (min-width:600px)and(max-width:1024px) {
-    .P{display: none;}
-    .L{display:block}
-   .img{width:100%;height:auto}
+nav a{
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#content-wrapper{
+    margin: 16px;
+    max-width: 1024px;
+    margin: 0 auto;
+    border: 1px solid #999;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.column-wrapper{
+}
+.column-3{
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+}
+
+
+.L{display: block; width:100%;height: auto;}
+.P{display: none; width:100%;height: auto;}
+
+
+@media screen and (max-width:600px) {
+    .P{display: block;}
+    .L{display:none}
+    .column-3{float: none;}
+ 
 }
