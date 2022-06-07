@@ -36,6 +36,7 @@ nav a{
 @media screen and (max-width:600px) {
     .P{display: block;}
     .L{display:none}
-    .column-3{float: none;}
+    .column-3{float: none;
+    padding:5px;}
  
 }
