@@ -50,3 +50,38 @@
     width: 100%;
 }
 
+[class*="col-"] {
+    padding: 15px;
+    float: left;
+    text-align: center;
+    margin: 0 0 0 1%;
+    background-color: #d8d8d8;
+    border: 2px solid;
+}
+
+[class*="col-"]:first-child,
+[class*="col-"]:first-of-type {
+    margin: 0
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    margin: 0 0 10px 0;
+    display: table;
+}
+
+@media all and (max-width: 500px) {
+    [class*="col-"] {
+        width: 100%;
+        border: none;
+        margin: 1% 0;
+        background-color: #d8d8d8;
+        border: 2px solid;
+    }
+}
