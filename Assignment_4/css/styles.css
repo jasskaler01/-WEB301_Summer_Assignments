@@ -1,0 +1,15 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.form-wrapper{
+    text-align: center;
+    justify-content: center;
+}
+label{
+    display: block;
+    padding: 6px;
+    margin: 0 auto;
+}
+@media screen and (max:700px){
+} 
