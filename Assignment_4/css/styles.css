@@ -6,6 +6,12 @@ html, body{
     text-align: center;
     justify-content: center;
 }
+#error{
+    color:red
+}
+#success{
+    color:green
+}
 label{
     display: block;
     padding: 6px;
