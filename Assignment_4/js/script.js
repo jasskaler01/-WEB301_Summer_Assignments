@@ -31,11 +31,11 @@ function showPosition(position) {
 
 }
 function submitInfo(){
-  let fname = document.getElementById('fName').value;
-  let lname = document.getElementById('lName').value;
+  let fname = $('#fName').val();
+  let lname = $('#lName').val();
   localStorage.setItem('fname',fname);
   localStorage.setItem('lname',lname);
-
+document.getElementById('success').innerHTML='Data submit Successfuly'
 }
 function showError(error) {
   console.log("An error occurred: ", error);
